@@ -1,11 +1,12 @@
 import { useFetch } from "../hooks/useFetch";
 import { Card } from "../components";
 import { useTitle } from "../hooks/useTitle";
-import { useEffect } from "react";
+
 
 export const MovieList = ({apiPath,title}) => {
   const { data: movies } = useFetch(apiPath);
- const pageTitle=useTitle(title);
+ //esLint-disable-next-Line
+  const pageTitle=useTitle(title);
   
   
 
